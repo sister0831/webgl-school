@@ -29,9 +29,9 @@ class App3 {
       // 描画する空間のファークリップ面（最遠面）
       far: 10000.0,
       // カメラの位置
-      x: 300.0,
-      y: 300.0,
-      z: 300.0,
+      x: 420.0,
+      y: 420.0,
+      z: 420.0,
       // カメラの中止点
       lookAt: new THREE.Vector3(0.0, 0.0, 0.0),
     };
@@ -318,7 +318,7 @@ class App3 {
     // フラグに応じてオブジェクトの状態を変化させる
     if (this.isDown === true) {
       // Y 軸回転 @@@
-      this.torusArray.forEach((torus) => {
+      this.torusArray.forEach((torus,index) => {
         torus.rotation.y += 0.05;
         torus.rotation.z += 0.02;
         torus.rotation.x += 0.04;
